@@ -17,6 +17,15 @@ public class Persona {
             fnacimineto,
             sexo,
             edo_civil,rango_edad;
+    private int edad;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
     public String getCodigo() {
         return codigo;

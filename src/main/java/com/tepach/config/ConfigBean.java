@@ -25,5 +25,21 @@ public class ConfigBean {
         dataSource.setUsername("anthonytepach");
         dataSource.setPassword("Tbryan.1996");
         return dataSource;
-    }    
+    }
+    @Bean
+    public Persona persona(){
+    return new Persona();
+    }
+    @Bean
+    public Contacto contacto(){
+    return new Contacto();
+    }
+    @Bean
+    public Direccion direccion(){
+    return new Direccion();
+    }
+    @Bean
+    public Evento evemto(){
+    return new Evento();
+    }
 }

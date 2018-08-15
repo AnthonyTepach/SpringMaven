@@ -12,12 +12,24 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Anthony Tepach
  */
 public class Miembro {
+
     private int id;
+
+    @Autowired
     private Persona persona;
+
+    @Autowired
     private Direccion direccion;
+
+    @Autowired
     private Contacto contacto;
+
+    @Autowired
     private Ministerio ministerio;
+
+    @Autowired
     private Imagen image;
+    
     private String fecha_registro;
 
     public int getId() {
@@ -75,6 +87,5 @@ public class Miembro {
     public void setFecha_registro(String fecha_registro) {
         this.fecha_registro = fecha_registro;
     }
-    
-}
 
+}
