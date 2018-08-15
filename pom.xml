@@ -5,6 +5,13 @@
     <artifactId>SpringMaven</artifactId>
     <version>1.0-Beta</version>
     <packaging>jar</packaging>
+    <repositories>
+        <repository>
+            <id>unknown-jars-temp-repo</id>
+            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -22,9 +29,24 @@
             <version>8.0.12</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j13</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.25</version>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-swing</artifactId>
+            <version>2.11.0-M7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jfoenix</groupId>
+            <artifactId>jfoenix</artifactId>
+            <version>9.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>unknown.binary</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>SNAPSHOT</version>
         </dependency>
     </dependencies>
     <properties>
