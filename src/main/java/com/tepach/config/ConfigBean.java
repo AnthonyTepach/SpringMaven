@@ -17,6 +17,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 @ComponentScan("com.tepach")
 @Lazy(value = true)
 public class ConfigBean {
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -26,20 +27,54 @@ public class ConfigBean {
         dataSource.setPassword("Tbryan.1996");
         return dataSource;
     }
+
     @Bean
-    public Persona persona(){
-    return new Persona();
+    public Contacto contacto() {
+        return new Contacto();
     }
+
     @Bean
-    public Contacto contacto(){
-    return new Contacto();
+    public Direccion direccion() {
+        return new Direccion();
     }
+
     @Bean
-    public Direccion direccion(){
-    return new Direccion();
+    public Evento evento() {
+        return new Evento();
     }
+
     @Bean
-    public Evento evemto(){
-    return new Evento();
+    public Familia familia() {
+        return new Familia();
+    }
+
+    @Bean
+    public Imagen imagen() {
+        return new Imagen();
+    }
+
+    @Bean
+    public Invitado invitado() {
+        return new Invitado();
+    }
+
+    @Bean
+    public Miembro miembro() {
+        return new Miembro();
+    }
+
+    @Bean
+    public Ministerio ministerio() {
+        return new Ministerio();
+    }
+
+    @Bean
+    public Persona persona() {
+        return new Persona();
+    }
+
+    @Bean
+    public Usuario usuario() {
+        return new Usuario();
     }
 }
